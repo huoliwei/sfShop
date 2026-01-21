@@ -1,0 +1,155 @@
+/* 缝纫机零件商城 - 极简电商风格主题 */
+
+:root {
+  /* 自定义主色调 */
+  --color-primary-bg: #FFFFFF;        /* 主背景：纯白色 */
+  --color-primary-text: #000000;      /* 主文字：黑色 */
+  --color-accent: #E60012;            /* 强调色：红色（促销横幅、重点内容）*/
+  --color-border: #E5E5E5;            /* 边框：浅灰色 */
+  --color-secondary-text: #666666;    /* 次要文字：中灰色 */
+  --color-placeholder: #CCCCCC;       /* 占位符：浅灰色 */
+
+  /* Vant 主题变量覆盖 */
+  /* 主色 */
+  --van-primary-color: #000000;
+  --van-success-color: #E60012;
+
+  /* 背景 */
+  --van-background-color: #FFFFFF;
+  --van-background-color-light: #F7F8FA;
+
+  /* 文字 */
+  --van-text-color: #000000;
+  --van-text-color-2: #666666;
+  --van-text-color-3: #CCCCCC;
+
+  /* 边框 */
+  --van-border-color: #E5E5E5;
+
+  /* 按钮 */
+  --van-button-primary-background: #000000;
+  --van-button-primary-border-color: #000000;
+  --van-button-default-color: #000000;
+  --van-button-default-border-color: #E5E5E5;
+  --van-button-border-radius: 6px;
+  --van-button-normal-font-size: 16px;
+
+  /* 导航栏 */
+  --van-nav-bar-background: #FFFFFF;
+  --van-nav-bar-title-text-color: #000000;
+  --van-nav-bar-title-font-size: 18px;
+  --van-nav-bar-icon-color: #000000;
+
+  /* Tab栏 */
+  --van-tabbar-background: #FFFFFF;
+  --van-tabbar-item-active-color: #000000;
+  --van-tabbar-item-text-color: #b8b8b8;
+  --van-tabbar-height: 56px;
+
+  /* Tabs 标签页 */
+  --van-tabs-bottom-bar-color: #000000;
+  --van-tab-active-text-color: #000000;
+  --van-tab-text-color: #666666;
+
+  /* 卡片 */
+  --van-card-background: #FFFFFF;
+  --van-card-border-color: #E5E5E5;
+  --van-card-border-radius: 10px;
+  --van-card-padding: 12px;
+}
+
+/* 全局样式 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* 隐藏滚动条 */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+/* 页面容器 */
+.page-container {
+  min-height: 100vh;
+  background-color: var(--color-primary-bg);
+  padding-bottom: var(--van-tabbar-height);
+}
+
+/* 内容区域 */
+.content-wrapper {
+  padding: 10px;
+}
+
+/* 标题层级 */
+.title-h1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-primary-text);
+}
+
+.title-h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-primary-text);
+}
+
+.title-h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-primary-text);
+}
+
+.text-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-primary-text);
+}
+
+.text-secondary {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-secondary-text);
+}
+
+/* 间距工具类 */
+.mt-8 { margin-top: 8px; }
+.mt-12 { margin-top: 12px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+
+.mb-8 { margin-bottom: 8px; }
+.mb-12 { margin-bottom: 12px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+.mb-32 { margin-bottom: 32px; }
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
